@@ -1,0 +1,1 @@
+# AndroidAbbyy2020
