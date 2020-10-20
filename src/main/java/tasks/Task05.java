@@ -1,5 +1,7 @@
 package tasks;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 /**
  * Напишите класс, конструктор которого принимает два массива:
  * массив значений и массив весов значений.
@@ -11,6 +13,31 @@ package tasks;
  * чем значение «2» и в десять раз реже, чем значение «3».
  */
 class RandomFromArray {
+    private int[] values;
+    private int[] weights;
+
+    public RandomFromArray(int[] values, int[] weights){
+        this.values = values;
+        this.weights = weights;
+    }
+
+    public int sumOfWeights() {
+        int sum = 0;
+        for(int weight : weights)
+            sum += weight;
+        return sum;
+    }
+
+    public int getElement(){
+        int sum = 0;
+        int cur_rand_index = ThreadLocalRandom.current().nextInt(0, this.sumOfWeights()+ 1);
+        for(int i = 0; i < weights.length ; i++) {
+            sum += weights[i];
+            if(sum > cur_rand_index)
+                return values[i];
+        }
+        return values[0];
+    }
 
 }
 

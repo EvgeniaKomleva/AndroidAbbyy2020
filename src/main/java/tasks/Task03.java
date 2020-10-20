@@ -10,11 +10,11 @@ public class Task03 {
      * int x = condition ? trueValue : falseValue;
      */
     public static int booleanSerialize(boolean b) {
-        throw new IllegalArgumentException();
+        return b ? 1: 0;
     }
 
     public static boolean booleanDeserialize(int i) {
-        throw new IllegalArgumentException();
+        return i != 0;
     }
 
 }
