@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AbbyyAndroidTasks</string>
+    <string name="date">12.12.2020</string>
+    <string name="img_description">Cute Kitty</string>
+    <string name="kitty_description">Александр Пушкин К морю</string>
+    <string name="large_text">Прощай, свободная стихия!
+        В последний раз передо мной
+        Ты катишь волны голубые
+        И блещешь гордою красой.</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>
